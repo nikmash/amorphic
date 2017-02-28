@@ -27,6 +27,7 @@ let Semotus = require('semotus');
 // Local Modules
 let getTemplates = require('./lib/getTemplates').getTemplates;
 let listen = require('./lib/listen').listen;
+let typescript = require('./lib/typescript');
 
 // Module Global Variables
 let AmorphicContext = require('./lib/AmorphicContext');
@@ -48,8 +49,11 @@ function reset() {
     return Bluebird.resolve(true);
 }
 
-module.exports = {
+var exports = {
     getTemplates: getTemplates,
     listen: listen,
-    reset: reset
+    reset: reset,
+    bindDecorators: typescript.bindDecorators.bind(exports)
 };
+
+module.exports = exports;
