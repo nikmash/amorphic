@@ -560,8 +560,9 @@ amorphic = // Needs to be global to make mocha tests work
 
             var objectTemplateSubClass = Object.create(RemoteObjectTemplate);
             var currentContext = {pass: 1};
-
-            if (this.config.templateMode == 'auto') {
+            if (this.config.templateMode == 'typescript') {
+            }
+            else if (this.config.templateMode == 'auto') {
 
                 var deferredExtends = [];
                 RemoteObjectTemplate.__statics__ = {};
