@@ -36,6 +36,7 @@ export class Supertype {
     fetchReferences(options)
     refresh (logger?)
     persist (options)
+    amorphicate (obj : any)
 }
 export function remote(props?);
 export function property(props?: Object);
