@@ -10,7 +10,7 @@ describe('Banking from pgsql Example', () => {
     it ('sets it all up', async () => {
         await amorphic.connect(__dirname, __dirname);
         await amorphic.dropAllTables();
-        return amorphic.syncAllTables();
+        await amorphic.syncAllTables();
     });
 
     it ('can create a ticket', async () => {
