@@ -3,7 +3,7 @@ export {Persistable, Persistor} from 'persistor';
 export {Remoteable} from './lib/utils/remoteable';
 import {Persistor} from 'persistor';
 export class Amorphic extends Persistor {
-    static create ()
+    static create () : Amorphic;
     connect (configDirectory, schemaDirectory?)
 }
 
