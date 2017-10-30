@@ -12,7 +12,6 @@
     "cookie-parser": "1.4.3",
     "express-session": "1.15.6",
     "formidable": "1.1.1",
-    "helmet": "3.9.0",
     "mongodb-bluebird": "0.1.2",
     "nconf": "0.8.5",
     "persistor": "2.3.*",
